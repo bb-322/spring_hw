@@ -1,0 +1,16 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="car" class="hw2.task23.Car" init-method="init">
+
+        <constructor-arg value="Audi"/>
+
+        <property name="color" value="black"/>
+        <property name="maxSpeed" value="220"/>
+
+    </bean>
+
+</beans>

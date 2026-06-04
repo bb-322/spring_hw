@@ -1,0 +1,27 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="garage" class="hw2.task4.Garage">
+        <property name="cars">
+            <map>
+                <entry key="audi" value-ref="car1"/>
+                <entry key="btw" value-ref="car2"/>
+                <entry key="toyota" value-ref="car3"/>
+            </map>
+        </property>
+    </bean>
+
+    <bean id="car1" class="hw2.task23.Car" init-method="init">
+        <constructor-arg value="audi"/>
+    </bean>
+    <bean id="car2" class="hw2.task23.Car" init-method="init">
+        <constructor-arg value="bmw"/>
+    </bean>
+    <bean id="car3" class="hw2.task23.Car" init-method="init">
+        <constructor-arg value="toyota"/>
+    </bean>
+
+</beans>
