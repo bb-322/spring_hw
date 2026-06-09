@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+    <body>
+
+        <form th:action="@{/save}" method="post">
+
+            <label>
+                enter name:
+                <input type="text"
+                       name="name"
+                       placeholder="Name">
+            </label>
+            <br>
+            <label>
+                enter email:
+                <input type="text"
+                       name="email"
+                       placeholder="Email">
+            </label>
+            <br>
+            <button type="submit">
+                Save
+            </button>
+
+        </form>
+
+    </body>
+</html>
