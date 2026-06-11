@@ -6,7 +6,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Main {
     static void main() {
         ApplicationContext context =
-                new ClassPathXmlApplicationContext("hw2/task4/appContext.xml");
+                new ClassPathXmlApplicationContext("context/hw2/task4/appContext.xml");
 
         Garage garage = context.getBean(Garage.class);
         garage.getCars();

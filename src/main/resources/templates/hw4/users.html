@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Users panel</title>
+</head>
+<body>
+
+<h1>Users CRUD</h1>
+
+<hr>
+
+<h2>Create user</h2>
+<form action="/users" method="post">
+    <input type="text" name="name" placeholder="Name" required>
+    <input type="text" name="lastname" placeholder="Lastname" required>
+    <input type="number" name="age" placeholder="Age" required>
+    <button type="submit">Create</button>
+</form>
+
+<hr>
+
+<h2>Find user by ID</h2>
+<form action="/users/find" method="get">
+    <input type="number" name="id" placeholder="ID" required>
+    <button type="submit">Find</button>
+</form>
+
+<hr>
+
+<h2>All users</h2>
+<form action="/users/api/all" method="get">
+    <button type="submit">Show all users (JSON)</button>
+</form>
+
+<h2>Find by name</h2>
+<form action="/users/find/by-name" method="get">
+    <input type="text" name="name" placeholder="Name" required>
+    <button type="submit">Search</button>
+</form>
+
+<h2>Find by age</h2>
+<form action="/users/find/by-age" method="get">
+    <input type="number" name="age" placeholder="Age" required>
+    <button type="submit">Search</button>
+</form>
+
+<hr>
+
+<h2>Update user (full)</h2>
+<form action="/users/update" method="post">
+    <input type="number" name="id" placeholder="ID" required>
+    <input type="text" name="name" placeholder="New name" required>
+    <input type="text" name="lastname" placeholder="New lastname" required>
+    <input type="number" name="age" placeholder="New age" required>
+    <button type="submit">Update</button>
+</form>
+
+<hr>
+
+<h2>Update age only</h2>
+<form action="/users/update-age" method="post">
+    <input type="number" name="id" placeholder="ID" required>
+    <input type="number" name="age" placeholder="New age" required>
+    <button type="submit">Update age</button>
+</form>
+
+<hr>
+
+<h2>Delete user</h2>
+<form action="/users/delete" method="post">
+    <input type="number" name="id" placeholder="ID" required>
+    <button type="submit">Delete</button>
+</form>
+
+</body>
+</html>

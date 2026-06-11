@@ -10,7 +10,7 @@ public class Main {
                 new AnnotationConfigApplicationContext(AppConfig.class);
 
 //        ApplicationContext context =
-//                new ClassPathXmlApplicationContext("hw2/task23/appContext.xml");
+//                new ClassPathXmlApplicationContext("context/hw2/task23/appContext.xml");
 
         Car car = context.getBean(Car.class);
         System.out.println(car);
