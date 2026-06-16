@@ -18,7 +18,7 @@ public interface UserRepository extends JpaRepository<User, Integer> {
     @Modifying
     @Transactional
     @Query("update User u set u.age = :age where u.id = :id")
-    void updateAge(@Param("id") Integer id, @Param("age") Integer age);
+    void updateAge(@Param("id") Integer id, @Param("age") Integer newAge);
 
     @Modifying
     @Transactional
